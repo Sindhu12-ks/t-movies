@@ -1,0 +1,118 @@
+@import "tailwindcss";
+.overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    z-index:1050;
+
+}
+.listItems{
+    background-color: #2b2929;
+    border:1 solid black;
+}
+.genreItem{
+    background-color: rgba(232, 184, 75, 0.14);;
+    border:1 solid rgb(232, 184, 75);
+    border-width: 1px;
+    color: rgb(232, 184, 75);
+    border-radius: 8px;
+    font-size:12px;
+}
+.genreItem1{
+    background-color:  rgb(232, 184, 75);
+    border-radius: 8px;
+    font-size:12px;
+    border-width: 0px;
+    color:white;
+    width:135px;
+    height:35px;
+    padding:6px;
+    margin-top: 12px;
+    margin-right: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+.genreItem1:hover {
+  background-color: lch(79.06% 77.93 83.74);
+  color: white;
+}
+.actor{
+    color:beige;
+    font-size: 12px;
+}
+
+ 
+.search-bar{
+  background-color: lch(100% 0.01 296.81);
+  color: #000;
+  padding:4px;
+  border-radius: 8px;
+  border:1px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.youtube-container{
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+}
+ 
+.popup-content {
+  background: #111;  
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 700px;
+  width: 90%;
+  margin: auto;
+  border: 1px solid #333;
+}
+
+ 
+.modal-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+ 
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+ 
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;  
+  margin-top: 15px;
+}
+
+ 
+.video-wrapper > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+ 
+ 
