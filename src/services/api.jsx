@@ -1,6 +1,4 @@
 import axios from "axios"
-const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
-const apiKey = import.meta.env.VITE_API_KEY;
 
 
 const responseObj=each=>({
@@ -49,10 +47,12 @@ const responsesTv=item=>({
     date:item.first_air_date.split('-')[0]
 })
 const BASE_URL = 'https://api.themoviedb.org/3';
+const ACCESS_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YzBiOTU1MWJjM2ViNDcxNWZhMGNkNjQyMWIzZjY0YyIsInN1YiI6IjY1MWI4NTEwNzQ1MDdkMDBhYzQ2MzgyMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2hULmJzVC6zxC-uNqknUMeYrsDJFjf5H4I_PD7ppLW8';
+const API_KEY= '0fa2853e7c4d6c8f146aba861c5e4a06'
 const options={
         method:"GET",
         headers: {
-            Authorization: `Bearer ${accessToken}`,
+            Authorization: `Bearer ${ACCESS_TOKEN}`,
         },
     }
 export const  fetchNowPlaying = async (page) => {
@@ -148,7 +148,7 @@ export const  fetchsearch = async (query) => {
         try {
             const response = await axios.get('https://api.themoviedb.org/3/search/multi', {
             params: {
-            api_key: `${apiKey}`,
+            api_key: `${API_KEY}`,
             query: query,
           },
         });
